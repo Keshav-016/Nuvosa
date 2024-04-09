@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@400;500;600&family=Work+Sans:wght@400;600;700&display=swap");
+:root {
+  --body-background-color: #fff;
+  --button-color: #fad725;
+  --heading-blue-color: #6f77f1;
+  --content-color: #828282;
+  --benefits-section-color: #666565;
+  --heading-color: #212528;
+  --section-color: #f6f6f6;
+  --card-color: #fff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+body {
+  font-size: 65%;
+  background-color: var(--body-background-color) !important;
+  color: var(--heading-color) !important;
+}
+
+input {
+  outline: none;
+}
+
+.sub-heading {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--heading-color);
+}
+
+.content {
+  font-weight: 400;
+  font-size: min(4.5vw, 1rem);
+  color: var(--content-color);
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--heading-color);
+}
+
+button {
+  border: none !important;
+}
+
+.button-color {
+  background-color: var(--button-color) !important;
+}
+
+.sub-heading {
+  font-size: 28px;
+  color: var(--heading-color) !important;
+}
+
+.blue-text {
+  color: var(--heading-blue-color) !important;
+}
+
+.void-size {
+  margin-top: 100px !important;
+}
+
+.navbar-logo {
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--heading-color);
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #bc424e;
+  border-radius: 100%;
+  margin: 20px 0 0 2px;
+}
+
+.nav-search {
+  outline: none;
+  border-color: var(--heading-color);
+  color: var(--heading-color);
+  width: 150px;
+}
+
+.toggler {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.nav-link {
+  color: var(--heading-color) !important;
+}
+
+.yellow-circle {
+  width: 70px;
+  height: 70px;
+  left: -5px;
+  top: 140px;
+  display: none;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: min(7vw, 2.5rem);
+  color: var(--heading-color);
+}
+
+.hero-content {
+  font-weight: 400;
+  font-size: min(3.3vw, 1.1rem);
+  color: var(--content-color);
+}
+
+.tilt-text {
+  font-weight: 600;
+  font-size: min(5vw, 1.8rem);
+  color: var(--heading-blue-color);
+}
+
+.tilt-text {
+  border: 2px solid var(--heading-blue-color);
+  display: inline-block;
+  transform: rotate(-8.234deg);
+}
+
+.tilt-text::before {
+  content: ".";
+  font-size: 60px;
+  position: absolute;
+  top: -52px;
+  right: -8px;
+}
+
+.tilt-text::after {
+  content: ".";
+  font-size: 60px;
+  position: absolute;
+  bottom: -20px;
+  right: -8px;
+}
+
+.circle::before {
+  content: ".";
+  font-size: 60px;
+  position: absolute;
+  bottom: -20px;
+  left: -8px;
+}
+
+.circle::after {
+  content: ".";
+  font-size: 60px;
+  position: absolute;
+  top: -52px;
+  left: -8px;
+}
+
+.girl-image {
+  width: 100%;
+}
+
+.creative-team {
+  width: 225px;
+  bottom: 30px;
+  left: -80px;
+  background-color: var(--body-background-color);
+}
+.creative-team :hover {
+  cursor: pointer;
+}
+
+.management-title {
+  font-weight: 400;
+  font-size: min(6vw, 2rem);
+  color: var(--heading-color);
+}
+
+.management-content {
+  font-weight: 400;
+  font-size: min(3.2vw, 1rem);
+  color: var(--heading-color);
+}
+
+.management-card > div {
+  background-color: var(--card-color) !important;
+}
+
+.management-arrow :hover {
+  cursor: pointer;
+}
+
+.optimisation-card {
+  border-bottom: 2px solid var(--body-background-color);
+}
+.optimisation-card:hover {
+  box-shadow: 0px 10px 14px 2px rgba(14, 17, 60, 0.03);
+  background-color: var(--card-color) !important;
+  border-bottom: 2px solid var(--heading-blue-color);
+  cursor: pointer;
+}
+
+.optimisation-circle {
+  width: 30vw;
+  right: 0;
+  bottom: -5px;
+}
+
+.numbers {
+  right: 25%;
+  top: 17%;
+}
+
+.advertisment-section {
+  background-color: var(--section-color);
+}
+
+.business-card {
+  transition: all 200ms ease-in-out;
+}
+.business-card:hover {
+  cursor: pointer;
+  box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+}
+
+.chooser-section {
+  background-color: var(--section-color);
+}
+
+.chooser-content {
+  max-width: 780px;
+  transition: transform 300ms ease-in-out;
+}
+
+.chooser-card {
+  transition: transform 500ms ease-in-out;
+  background-color: var(--body-background-color) !important;
+}
+.chooser-card:hover {
+  cursor: pointer;
+  box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+  transform: scale(1.03);
+}
+
+.needs-card:hover {
+  border-radius: 4px;
+  background: var(--section-color);
+  cursor: pointer;
+  box-shadow: 5px 25px 37px 0px rgba(2, 22, 5, 0.06);
+}
+
+.stats-heading {
+  font-weight: 600;
+  font-size: 10vw;
+  color: var(--benefits-section-color);
+}
+
+.red-dot {
+  background-color: #d1563b;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.green-dot {
+  background-color: #3bd165;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.yellow-dot {
+  background-color: #f7c745;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.plans-section {
+  background-color: var(--section-color);
+}
+
+.plan-card {
+  transition: transform 500ms ease-in-out;
+  background-color: var(--body-background-color) !important;
+}
+.plan-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background: url(./images/plans/blue-bg.svg) no-repeat center;
+  background-size: stretch;
+}
+.plan-card:hover span,
+.plan-card:hover button {
+  color: #fff !important;
+}
+.plan-card button {
+  color: var(--heading-color) !important;
+}
+.plan-card button:hover {
+  background-color: var(--button-color);
+  color: black !important;
+}
+
+.expert-card:hover {
+  cursor: pointer;
+  box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+}
+
+.client-data {
+  overflow: auto;
+}
+.client-data::-webkit-scrollbar {
+  display: none;
+}
+
+.client-quote {
+  background-image: url(images/clients/quote.svg);
+  background-repeat: no-repeat;
+}
+
+.client-card:hover {
+  cursor: pointer;
+  box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+}
+
+.client-scroller > span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--section-color);
+}
+
+.active-client-page {
+  background-color: var(--heading-blue-color) !important;
+}
+
+.form-section {
+  background-color: var(--section-color);
+}
+
+.subscribe-button {
+  background-color: #6f77f1 !important;
+  color: #fff !important;
+}
+
+.bottom-items {
+  font-weight: 400;
+  font-size: 16px;
+  color: #212528;
+}
+
+.bottom-items {
+  color: var(--heading-color) !important;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 10px;
+  color: var(--content-color);
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: min(4vw, 1.9rem);
+  }
+  .tilt-text {
+    font-size: min(2.5vw, 1.3rem);
+  }
+  .hero-content {
+    font-size: min(1.8vw, 0.6rem);
+  }
+  .management-title {
+    font-size: min(2vw, 1rem);
+  }
+  .management-content {
+    font-size: min(3.2vw, 0.54rem);
+  }
+  .stats-heading {
+    font-size: min(8vw, 3rem);
+  }
+}
+@media (min-width: 992px) {
+  .nav-link {
+    border-bottom: 2px solid transparent !important;
+  }
+  .nav-link:hover {
+    border-bottom: 2px solid;
+    -o-border-image: linear-gradient(to right, rgb(111, 119, 241), rgb(111, 119, 241) 70%, white 70%, white 80%, rgb(111, 119, 241) 80%, rgb(111, 119, 241));
+       border-image: linear-gradient(to right, rgb(111, 119, 241), rgb(111, 119, 241) 70%, white 70%, white 80%, rgb(111, 119, 241) 80%, rgb(111, 119, 241));
+    border-image-slice: 1;
+  }
+  .yellow-circle {
+    display: block;
+  }
+  .hero-title {
+    font-size: 4vw;
+  }
+  .tilt-text {
+    font-size: min(2.6vw, 2rem);
+  }
+  .hero-content {
+    font-size: min(1.8vw, 1rem);
+  }
+  .management-title {
+    font-size: min(2.2vw, 2rem);
+  }
+  .management-content {
+    font-size: min(1vw, 0.9rem);
+  }
+}/*# sourceMappingURL=style.css.map */
